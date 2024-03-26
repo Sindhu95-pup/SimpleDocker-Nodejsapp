@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vote Now</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Link to Font Awesome library (Version 5) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+  <script>
+    // Function to handle voting
+    function vote(sport) {
+      const voteElement = document.getElementById(`${sport}-votes`);
+      let count = parseInt(voteElement.textContent);
+      count++;
+      voteElement.textContent = count;
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Vote for the Best Hangout Sport for a Family:</h1>
+    <div class="image">
+      <img src="./images/family.JPG" alt="Image" width="500" height="500">
+    </div>
+    <table>
+      <tr>
+        <th>Sport</th>
+        <th>Your Vote</th>
+        <th>Total Votes</th>
+      </tr>
+      <tr>
+        <td>Dumb Charades </td>
+        <td class="voting">
+          <button class="vote-btn" onclick="vote('dc')"><i class="fa fa-thumbs-up"></i></button>
+        </td>
+        <td id="dc-votes">0</td>
+        </td>
+      </tr>
+      <tr>
+        <td>Uno Cards </span></td>
+        <td class="voting">
+          <button class="vote-btn" onclick="vote('uc')"><i class="fa fa-thumbs-up"></i></button>
+        </td>
+        <td id="uc-votes">0 </td>
+      </tr>
+      <tr>
+        <td>Carroms </td>
+        <td class="voting">
+          <button class="vote-btn" onclick="vote('carroms')"><i class="fa fa-thumbs-up"></i></button>
+        </td>
+        <td id="carroms-votes">0</td>
+      </tr>
+      <tr>
+        <td>Kahoot </td>
+        <td class="voting">
+          <button class="vote-btn" onclick="vote('kahoot')"><i class="fa fa-thumbs-up"></i></button>
+        </td>
+        <td id="kahoot-votes">0 </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

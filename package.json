@@ -1,0 +1,22 @@
+{
+  "name": "polling-app",
+  "version": "1.0.0",
+  "description": "users can vote and view the results",
+  "main": "Server.js",
+  "scripts": {
+    "test": "node Server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sindhu95-pup/Polling-app.git"
+  },
+  "author": "Sindhu Telikapalli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sindhu95-pup/Polling-app/issues"
+  },
+  "homepage": "https://github.com/Sindhu95-pup/Polling-app#readme",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
+}

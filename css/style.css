@@ -1,0 +1,61 @@
+ /* Your CSS styles */
+ body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+/* Center elements horizontally */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Updated vote button styles */
+.vote-btn {
+  background-color: #e7b110;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px 20px; /* Adjusted padding to make the buttons larger */
+  border-radius: 5px;
+  display: inline-block; /* Ensure buttons occupy a block in the flow */
+  text-align: center; /* Center the text within the buttons */
+  line-height: 1; /* Reset the line height to avoid extra space */
+}
+
+/* Vote count input styles */
+input[type="number"] {
+  width: 50px;
+  text-align: center;
+}
+
+/* Main container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+ /* Table styles */
+ table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
